@@ -13,7 +13,7 @@ app = Flask(__name__)
 #intializing flask
 
 #connects client to replicate (it hosts the AI model)
-replicate_client = replicate.Client(api_token="r8_ecVRbKDdU90NACoZ7onI01JHaMhs1Hv12UYd1")
+replicate_client = replicate.Client(api_token="r8_ecVRbKDdU90NACoZ7onI01JHaMhs1Hv12UYd1") #THIS IS CHANGED BECAUSE OF SECURITY REASONS
 
 # /generate calls a function, and it only responds to POST requests
 @app.route("/generate", methods=["POST"])
