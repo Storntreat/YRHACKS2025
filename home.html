@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/home.css">
+    <title>Sketch2Art</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parisienne&display=swap" rel="stylesheet">
+  </head>
+
+  
+  <body class="body">
+    <div class="centered">
+      <h1 class="title" style="display: inline-block;">Sketch</h1>
+      <h1 class="title-two" style="display: inline-block; padding: 0 0.2em;"><b><i>2</i></b></h1>
+      <h1 class="title" style="display: inline-block;">Art</h1>
+    </div>
+    <div class="centered description">
+      <h1 style="font-family:'Nunito Sans'">
+        Unleash your creativity with nothing but a sketch.
+      </h1>
+      <h2 style="font-family:'Nunito Sans'">
+        Sketch2Art is an interactive web tool that transforms your simple line
+        drawings into detailed, high-quality AI-generated artwork. Whether
+        you're an artist, a designer, or someone who loves to
+        doodle, Sketch2Art lets you bring your imagination to life — instantly.
+      </h2>
+        <h2 style="font-family:'Nunito Sans'">
+        First, draw a line-sketch in the left canvas. Then, enter an optional prompt and hit submit! Your AI-generated artwork will appear in the right canvas, available to save and share!
+      </h2>
+    </div>
+
+    
+    <div class="drawing">
+      <div class="left-column">
+        <h1 class="title" style="font-size: 50px">Draw</h1>
+        <canvas id="canvas1" class="drawingboard"></canvas>
+        <div id="prompt" class="description" style="width: 465px">
+          <label for="promptInput" style="font-size: 20px; font-family: 'Nunito Sans'">Enter an optional prompt for your image generation:</label>
+          <input type="text" id="promptInput" class="prompt" placeholder="e.g. earth, or ball, or clock (if you drew a circle)">
+        </div>
+        <div class="drawing">
+          <button id="resetButton" class="resetButton" style="font-family: 'Nunito Sans'"><b>RESET</b></button>
+          <button id="submitButton" class="submitButton" style="font-family: 'Nunito Sans'"><b>SUBMIT</b></button>
+        </div>
+      </div>
+      <div class="right-column">
+        <h1 class="title" style="font-size: 50px">Generate</h1>
+        <div class="generateboard"></div>
+      </div>
+  </div>
+    </div>
+  </body>
+
+  <script src="/static/home.js"></script>
+</html>
